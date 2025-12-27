@@ -24,6 +24,29 @@ class StatusEvent(Event):
 
 
 @dataclass
+class ThinkingEvent(Event):
+    """Her is thinking - show playful inner monologue."""
+
+    thought: str = ""
+
+
+@dataclass
+class FetchingEvent(Event):
+    """Data fetching in progress."""
+
+    source: str = ""
+    progress: float = 0.0
+
+
+@dataclass
+class NewDataEvent(Event):
+    """New data available from background fetch."""
+
+    source: str = ""
+    count: int = 0
+
+
+@dataclass
 class ExploreStartEvent(Event):
     """Exploration started for a source."""
 
@@ -55,7 +78,7 @@ class DiscoveryEvent(Event):
 class ChatEvent(Event):
     """Chat message event."""
 
-    role: str = ""  # "user" or "assistant"
+    role: str = ""
     content: str = ""
 
 
@@ -66,3 +89,12 @@ class ErrorEvent(Event):
     source: str = ""
     error: str = ""
     details: Any = None
+
+
+@dataclass
+class SourceModifiedEvent(Event):
+    """Source configuration was modified."""
+
+    action: str = ""
+    source_name: str = ""
+    route: str | None = None
