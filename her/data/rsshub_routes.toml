@@ -2,85 +2,85 @@
 # 她可以根据这个表找到感兴趣的信息源
 
 [categories]
-热榜 = [
+"热榜" = [
     "/v2ex/topics/hot",
     "/zhihu/hot",
     "/weibo/search/hot",
     "/baidu/top",
-    "/toutiao/hot",
+    "/toutiao/hot"
 ]
 
-科技 = [
+"科技" = [
     "/cnbeta",
     "/36kr/newsflashes",
     "/huxiu/article",
     "/ithome",
     "/solidot",
-    "/oschina/news/industry",
+    "/oschina/news/industry"
 ]
 
-编程 = [
+"编程" = [
     "/juejin/trending/all/weekly",
     "/segmentfault/blogs",
     "/infoq/recommend",
     "/github/trending/daily",
-    "/hackernews",
+    "/hackernews"
 ]
 
-产品 = [
+"产品" = [
     "/sspai/index",
     "/woshipm/popular",
     "/pmcaff/feed/1",
-    "/producthunt/today",
+    "/producthunt/today"
 ]
 
-游戏 = [
+"游戏" = [
     "/steam/news",
     "/3dm/news",
     "/gamersky/news",
-    "/nga/forum/489",
+    "/nga/forum/489"
 ]
 
-影视 = [
+"影视" = [
     "/douban/movie/weekly",
     "/douban/movie/playing",
-    "/rottentomatoes/opening",
+    "/rottentomatoes/opening"
 ]
 
-生活 = [
+"生活" = [
     "/bilibili/ranking/all/1/1",
     "/bilibili/popular/all",
     "/coolapk/tuwen/latest",
-    "/douban/group/648102",
+    "/douban/group/648102"
 ]
 
-阅读 = [
+"阅读" = [
     "/douban/book/rank/fiction",
     "/goodreads/bestsellers",
-    "/weread/bestindex/rising",
+    "/weread/bestindex/rising"
 ]
 
-财经 = [
+"财经" = [
     "/wallstreetcn/live/global",
     "/jin10",
-    "/cls/telegraph",
+    "/cls/telegraph"
 ]
 
-设计 = [
+"设计" = [
     "/dribbble/popular",
     "/behance/featured",
-    "/zcool/discover/all",
+    "/zcool/discover/all"
 ]
 
-社区 = [
+"社区" = [
     "/v2ex/topics/hot",
     "/nga/forum/489",
     "/tieba/forum/hot",
-    "/reddit/r/programming",
+    "/reddit/r/programming"
 ]
 
-新闻 = [
+"新闻" = [
     "/zaobao/realtime/china",
     "/bbc/chinese",
-    "/infzm/1",
+    "/infzm/1"
 ]
