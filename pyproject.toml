@@ -1,6 +1,6 @@
 [project]
 name = "her"
-version = "0.1.0"
+version = "0.2.0"
 description = "A proactive, personified agent that explores information autonomously"
 readme = "README.md"
 requires-python = ">=3.11"
@@ -9,12 +9,11 @@ dependencies = [
     "openai>=1.50.0",
     "httpx>=0.27.0",
     "feedparser>=6.0.0",
-    "rich>=13.0.0",
-    "prompt-toolkit>=3.0.0",
+    "textual>=0.47.0",
 ]
 
 [project.scripts]
-her = "her.cli:main"
+her = "her.main:main"
 
 [build-system]
 requires = ["hatchling"]

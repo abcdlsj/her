@@ -13,11 +13,13 @@ class Provider(Enum):
 
 @dataclass
 class LLMConfig:
+    """LLM configuration."""
+    
     provider: Provider = Provider.OPENAI
     model: str = "gpt-4o"
     api_key: str | None = None
     base_url: str | None = None
-    max_tokens: int = 10240
+    max_tokens: int = 4096
 
 
 class LLM(ABC):
@@ -77,7 +79,7 @@ class OpenAILLM(LLM):
             max_tokens=self.max_tokens,
             messages=messages,
         )
-        return response.choices[0].message.content
+        return response.choices[0].message.content or ""
 
 
 def create_llm(config: LLMConfig | None = None) -> LLM:
